@@ -1,3 +1,166 @@
 body {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Noto Sans', sans-serif;
+	padding: 8% 4% 2%;
+	color: #fff;
+	font-size: 15px;
+}
+.header {
+	padding-bottom: 12%;
+}
+.fb-share {
+	display: inline-block;
+	float: right;
+
+}
+.tw-btn {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+.content {
+	padding-bottom: 12%; 
+}
+.opt-in {
+	border-right: 4px solid #fff;
+}
+h1 {
+    font-weight: 700;
+    font-size: 53px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 0;
+	padding-bottom: 8%;
+}
+a {
+	color: #537c8f;
+}
+a:visited {
+	color: #537c8f;
+}
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+form {
+	max-width: 520px;
+	margin-bottom: 2%;
+}
+.form-control {
+	background: #e5f8fc;
+	border: 2px solid #f1ce02;
+	display: inline-block;
+	box-shadow: none;
+
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border: 2px solid #6ea4ad;
+}
+.my-btn {
+	background: #f1ce02;
+	color: #312a02;
+	font-weight: 700;
+}
+.social-bar ul,  .social-bar li {
+	margin: 0;
+	padding: 0;
+}
+.social-bar ul {
+	float: right;
+}
+.social-bar li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+.social-bar a {
+	color: #fff;
+	font-size: 20px;
+}
+/** Timer**/
+#defaultCountdown, #defaultCountdown-2 {
+	 font-family: 'Oswald', sans-serif;
+}
+.countdown-amount {
+   font-size: 72px;
+   font-weight: 300;
+}
+.countdown-period {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.clrfx {
+	clear: both;
+}
+@media only screen and (max-width: 1366px) {
 	
+	body {
+		padding: 5% 4% 3%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	h1 {
+		font-size: 35px;
+		padding-top: 3%;
+	}
+	h3 {
+		margin-bottom: 0;
+		padding-bottom: 3%;
+		font-size: 18px;
+	}
+	.header {
+    padding-bottom: 5%;
+}
+	.logo {
+		margin: 0 auto;
+	}
+	.content {
+    padding-bottom: 4%;
+}
+	.opt-in {
+	border-right: 0px;
+	text-align: center;
+	margin-top: 0;
+	}
+	form {
+		margin: 0 auto;
+	}
+	.form-control {
+		font-size: 12px !important;
+
+	}
+	.my-btn {
+		font-size: 13px !important;
+		padding: 10px 8px !important;
+	}
+	.footer {
+		margin-top: 0;
+	}
+	.copyright {
+		text-align: center;
+	}
+	.social-bar {
+		margin: 0 auto;
+		max-width: 170px;
+	}
+	.countdown-amount {
+   		font-size: 50px;
+   		font-weight: 300;
+	}
+	.countdown-period {
+	    font-weight: 700;
+	    font-size: 18px;
+	    text-transform: uppercase;
+	}
+
 }
