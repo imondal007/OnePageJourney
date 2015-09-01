@@ -1,11 +1,3 @@
-body {
-	background: url(../img/bg.jpg) no-repeat center center fixed;
-	background-size: cover;
-	font-family: 'Noto Sans', sans-serif;
-	padding: 8% 4% 2%;
-	color: #fff;
-	font-size: 15px;
-}
 .header {
 	padding-bottom: 12%;
 }
