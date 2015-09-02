@@ -1,0 +1,21 @@
+html {
+    height:100%
+}
+body {
+	font-family: 'Noto Sans', sans-serif;
+	color: #fff;
+	font-size: 15px;
+	background: #000;
+}
+#wrapper {
+	padding: 8% 4% 2%;
+}
+@media only screen and (max-width: 1366px) {
+	
+	body {
+		padding: 0;
+	}
+	#wrapper {
+	padding: 5% 4% 2%;
+}
+}

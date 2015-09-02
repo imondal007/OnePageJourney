@@ -1,0 +1,17 @@
+body {
+	background: url(../img/bg-light.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Noto Sans', sans-serif;
+	padding: 8% 4% 2%;
+	color: #0b4057;
+	font-size: 15px;
+}
+.form-control {
+    background: #FFFFFF !important;
+}
+.social-bar a {
+	color: #0b4057  !important;
+}
+.opt-in {
+	border-right: 4px solid #0b4057  !important;
+}

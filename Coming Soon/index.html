@@ -8,23 +8,45 @@
 
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/image-with-layer.css">
-		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="timer/jquery.countdown.css"> 
+		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Oswald:700,300' rel='stylesheet' type='text/css'>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
-		<script type="text/javascript" src="timer/jquery.plugin.js"></script> 
-		<script type="text/javascript" src="timer/jquery.countdown.js"></script>
-		<script>
-		$(function () {
-			var austDay = new Date();
-			austDay = new Date(austDay.getFullYear() + 1, 1 - 5, 18);
-			$('#defaultCountdown, #defaultCountdown-2').countdown({until: austDay, format: 'HMS'});
-			$('#year').text(austDay.getFullYear());
-		});
-		</script>
+		<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -52,36 +74,47 @@
 				</div>
 				<!--header-->
 				<div class="content row">
-					<div class="col-sm-7 opt-in">
-					<div class="visible-xs-block">
-						<div id="defaultCountdown"></div>
-						<br class="clrfx">
-					</div>
-						<h1>WE ARE COMING SOON</h1>
-						<h3>Busy with creating some awesome stuff!! Stay tuned</h3>
+					<div class="col-sm-12 opt-in text-center">
+						<h1>Metro Responsive Coming Soon Template</h1>
+						<h3>Please choose a version to see the demo</h3>
 						
-						<form role="form">  
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="Enter your email address" />
-          <div class="input-group-btn">
-            <button type="submit" class="btn my-btn">SUBSCRIBE</button>
-          </div><!-- /btn-group -->
-        </div><!-- /input-group -->
-      </div><!-- /.col-xs-12 -->
-    </div><!-- /.row -->
-</form>
-						<!--subscriptionbox-->
-					</div>
-					<div class="col-sm-5 hidden-xs">
-						<div id="defaultCountdown-2"></div>
+						<div id="effect-2" class="effects clearfix">
+            <div class="img">
+                <img src="img/jpg/1.jpg" alt="">
+                <div class="overlay">
+                    <a href="image-with-layer.html" class="expand">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="img/jpg/2.jpg" alt="">
+                <div class="overlay">
+                    <a href="video-bg.html" class="expand">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="img/jpg/3.jpg" alt="">
+                <div class="overlay">
+                    <a href="light-img-bg.html" class="expand">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="img/jpg/4.jpg" alt="">
+                <div class="overlay">
+                    <a href="pattern-bg.html" class="expand">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>
+        </div>
+
 					</div>
 				</div>
 				<!--content-->
 				<div class="footer row">
 					<div class="col-md-6 copyright">
-						<p>&copy; All right reserved by CompanyName Designed by <a href="http://www.pixelrr.com" target="_blank">Pixelrr</a></p>
+						<p>&copy; Designed And Developed by <a href="http://www.pixelrr.com" target="_blank">Pixelrr</a></p>
 					</div>
 					<div class="col-md-6 social-bar">
 						<ul>
@@ -126,6 +159,17 @@
 		  return t;
 		}(document, "script", "twitter-wjs"));</script>
 		<!--Tweet button JavaScript SDK-->
+		<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34160351-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--image overlay hover-->
 		<!-- Bootstrap JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 	</body>

@@ -9,17 +9,19 @@
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="timer/jquery.countdown.css"> 
+		<link rel="stylesheet" type="text/css" href="timer/jquery.countdown.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/video-bg.css">
 		<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Oswald:700,300' rel='stylesheet' type='text/css'>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script> 
 		<script type="text/javascript" src="timer/jquery.plugin.js"></script> 
 		<script type="text/javascript" src="timer/jquery.countdown.js"></script>
 		<script>
 		$(function () {
 			var austDay = new Date();
-			austDay = new Date(austDay.getFullYear() + 1, 1 - 5, 2);
+			austDay = new Date(austDay.getFullYear() + 1, 1 - 5, 18);
 			$('#defaultCountdown, #defaultCountdown-2').countdown({until: austDay, format: 'HMS'});
 			$('#year').text(austDay.getFullYear());
 		});
@@ -32,11 +34,12 @@
 		<![endif]-->
 	</head>
 	<body>
+	<div id="wrapper">
 		<div class="container">
 			<div class="layout">
 				<div class="header row">
 					<div class="col-sm-6">
-						<img src="img/logo.png" alt="Metro" class="img-responsive logo">
+						<img src="img/logo-white.png" alt="Metro" class="img-responsive logo">
 					</div>
 					<div class="col-sm-6 hidden-xs social-share">
 					<div class="fb-share">
@@ -96,7 +99,7 @@
 			<!--layout-->
 		</div>
 		<!--container-->
-
+</div>
 
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
@@ -124,6 +127,12 @@
 		 
 		  return t;
 		}(document, "script", "twitter-wjs"));</script>
+
+		<script>
+			 $().ready(function() {
+                $('#wrapper').tubular({videoId: 'mX76pwV4CBo'}); // where idOfYourVideo is the YouTube ID.
+        });
+		</script>
 		<!--Tweet button JavaScript SDK-->
 		<!-- Bootstrap JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
